@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/MSSV"
+                style="@style/label"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_MSSV" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/hl_mssv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/Input_MSSV"
+                    style="@style/inputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hintMSSV"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/MSSV_warn"
+                style="@style/text_warn"
+                android:text="MSSV không được để trống"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hintName" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/Input_name"
+                    style="@style/inputText"
+                    android:hint="VD: Lê Trường Nguyên"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/HVT_warn"
+                style="@style/text_warn"
+                android:text="Họ và tên không được để trống"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/Label_CCCD"
+                style="@style/label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/HintCCCD" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/Input_CCCD"
+                    style="@style/inputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="VD: 01234567899"
+                    android:inputType="number"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/CCCD_warn"
+                style="@style/text_warn"
+                android:text="CCCD không được để trống"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/label_sdt"
+                style="@style/label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hintSDT" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/Input_SDT"
+                    style="@style/inputText"
+                    android:hint="VD: 0888888888"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/SDT_warn"
+                style="@style/text_warn"
+                android:text="SDT không được để trống"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/labelEmail"
+                style="@style/label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Label_email" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:hint="VD: letruongnguyen@gmail.com"
+                    android:id="@+id/Input_Email"
+                    style="@style/inputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/Email_warn"
+                style="@style/text_warn"
+                android:text="Email không được để trống"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <TextView
+                style="@style/label"
+                android:id="@+id/birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_date" />
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                style="@style/label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_home" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/Input_home"
+                    style="@style/inputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                style="@style/label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_homenow" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/Input_homenow"
+                    style="@style/inputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                style="@style/label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ngành học hiện tại:" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    style="@style/choose"
+                    android:id="@+id/radioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Khoa học máy tính" />
+
+                <RadioButton
+                    style="@style/choose"
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kĩ thuật máy tính" />
+            </RadioGroup>
+            <TextView
+                style="@style/label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ngôn ngữ lập trình:" />
+
+            <CheckBox
+                style="@style/choose"
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C++" />
+
+            <CheckBox
+                style="@style/choose"
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Java" />
+
+            <CheckBox
+                style="@style/choose"
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Python" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider"/>
+            <CheckBox
+                android:onClick="hinddenWarn"
+                style="@style/choose"
+                android:id="@+id/yesSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tôi đồng ý với các điều khoản(Bắt buộc)" />
+            <TextView
+                android:id="@+id/Yes_warn"
+                style="@style/text_warn"
+                android:text="Bạn cần đồng ý"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <Button
+                android:onClick="submit"
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

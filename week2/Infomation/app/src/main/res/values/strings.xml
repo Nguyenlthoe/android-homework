@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Infomation</string>
+    <string name="hintMSSV">VD: 2019412</string>
+    <string name="hintName">Họ và tên</string>
+    <string name="HintCCCD">Số căn cước công dân:</string>
+    <string name="hintSDT">Số điện thoại:</string>
+    <string name="label_MSSV">Mã số sinh viên:</string>
+    <string name="Label_email">Email:</string>
+    <string name="label_home">Quê quán:</string>
+    <string name="label_date">Ngày sinh:</string>
+    <string name="label_homenow">Nơi ở hiện tại:</string>
+</resources>
