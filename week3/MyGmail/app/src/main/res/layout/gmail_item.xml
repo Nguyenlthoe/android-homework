@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/icon_front"
+        android:layout_width="63dp"
+        android:layout_height="81dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/icon_color"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_circle_blue_24dp" />
+
+        <TextView
+            android:id="@+id/icon_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="S"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/from_tv"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="4dp"
+        android:text="School"
+        android:lines="1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/time_tv"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/icon_front"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subject_tv"
+        android:layout_width="306dp"
+        android:layout_height="24dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="Thông báo"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/from_tv"
+        app:layout_constraintTop_toBottomOf="@+id/from_tv" />
+
+    <TextView
+        android:id="@+id/message_tv"
+        android:layout_width="306dp"
+        android:layout_height="24dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="Tiền đóng học phí kì này của em là 12.500.000 hây da da"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/subject_tv"
+        app:layout_constraintTop_toBottomOf="@+id/subject_tv" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="59dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="8dp"
+        android:text="11:30am"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subject_tv"
+        app:layout_constraintTop_toBottomOf="@+id/time_tv"
+        app:srcCompat="@drawable/ic_baseline_star_border_24" />
+
+    <ImageView
+        android:id="@+id/favorite_true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subject_tv"
+        app:layout_constraintTop_toBottomOf="@+id/time_tv"
+        app:srcCompat="@drawable/ic_baseline_star_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
